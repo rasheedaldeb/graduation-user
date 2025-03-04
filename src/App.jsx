@@ -5,6 +5,7 @@ import Favorite from "./Pages/Favorite";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import Register from "./Pages/Register";
+import SignIn from "./Pages/SignIn";
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/favorite" element={<Favorite />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/signin" element={<SignIn />} />
       </Routes>
       <Footer />
     </>

@@ -31,7 +31,9 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="buttons flex items-center gap-6">
-        <Link className="text-secondary text-xl">تسجيل الدخول</Link>
+        <Link to="/signin" className="text-secondary text-xl">
+          تسجيل الدخول
+        </Link>
         <Link
           to="/register"
           className="bg-secondary cursor-pointer rounded-lg px-5 py-3 text-white"

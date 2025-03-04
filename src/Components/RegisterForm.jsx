@@ -1,7 +1,8 @@
 const RegisterForm = () => {
   return (
-    <section className="w-full" dir="rtl">
-      <form>
+    <section className="flex w-full flex-col items-center gap-6" dir="rtl">
+      <h2 className="text-secondary text-3xl font-bold">انشاء حساب جديد</h2>
+      <form className="w-full">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
             <label className="text-secondary mb-2 block text-lg">
@@ -10,7 +11,7 @@ const RegisterForm = () => {
             <input
               name="name"
               type="text"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ادخل اسمك الاول"
             />
           </div>
@@ -21,7 +22,7 @@ const RegisterForm = () => {
             <input
               name="lname"
               type="text"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ادخل اسمك الاخير "
             />
           </div>
@@ -32,7 +33,7 @@ const RegisterForm = () => {
             <input
               name="email"
               type="text"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ادخل بريدك الالكتروني"
             />
           </div>
@@ -43,7 +44,7 @@ const RegisterForm = () => {
             <input
               name="number"
               type="number"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ادخل رقم هاتفك"
             />
           </div>
@@ -54,7 +55,7 @@ const RegisterForm = () => {
             <input
               name="password"
               type="password"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ضع كلمة مرور قوية"
             />
           </div>
@@ -65,7 +66,7 @@ const RegisterForm = () => {
             <input
               name="cpassword"
               type="password"
-              className="border-primary w-full rounded border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
+              className="border-primary w-full rounded-3xl border bg-gray-100 px-4 py-3 text-lg text-gray-800 transition-all outline-none focus:bg-transparent"
               placeholder="ضع كلمة المرور مرة اخرى للتأكيد"
             />
           </div>
@@ -74,7 +75,7 @@ const RegisterForm = () => {
         <div class="mt-8">
           <button
             type="button"
-            class="bg-primary hover:bg-secondary mx-auto block cursor-pointer rounded px-6 py-3 text-lg tracking-wider text-white"
+            class="bg-primary hover:bg-secondary mx-auto block cursor-pointer rounded-3xl px-6 py-3 text-lg tracking-wider text-white"
           >
             انشاء حساب
           </button>
