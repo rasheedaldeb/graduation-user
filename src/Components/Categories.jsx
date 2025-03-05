@@ -15,6 +15,10 @@ const Categories = () => {
         <img src="/images/store.png" alt="store" className="w-[40px]" />
         <p className="text-secondary text-lg font-bold">محلات </p>
       </button>
+      <button className="border-primary flex cursor-pointer items-center gap-2 rounded-lg border px-5 py-2">
+        <img src="/images/all.png" alt="store" className="w-[40px]" />
+        <p className="text-secondary text-lg font-bold">الكل </p>
+      </button>
     </div>
   );
 };

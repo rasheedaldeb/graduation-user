@@ -2,14 +2,12 @@ import React from "react";
 
 import Hero from "../Components/Hero";
 import AboutCompany from "../Components/AboutCompany";
-import Estates from "../Components/Estates";
 
 const Home = () => {
   return (
     <div>
-      <Hero />
+      <Hero image="/images/hero.jpg" title=" مرحبأ بكم في عقارات بلس" />
       <AboutCompany />
-      <Estates />
     </div>
   );
 };

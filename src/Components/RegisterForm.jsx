@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
+
 const RegisterForm = () => {
   return (
-    <section className="flex w-full flex-col items-center gap-6" dir="rtl">
+    <section
+      className="mt-14 flex w-full flex-col items-center gap-6"
+      dir="rtl"
+    >
       <h2 className="text-secondary text-3xl font-bold">انشاء حساب جديد</h2>
       <form className="w-full">
         <div className="grid gap-6 sm:grid-cols-2">
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               الاسم الاول
             </label>
             <input
@@ -16,7 +21,7 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               الاسم الاخير
             </label>
             <input
@@ -27,7 +32,7 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               البريد الالكتروني
             </label>
             <input
@@ -38,7 +43,7 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               رقم الهاتف
             </label>
             <input
@@ -49,7 +54,7 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               كلمة المرور
             </label>
             <input
@@ -60,7 +65,7 @@ const RegisterForm = () => {
             />
           </div>
           <div>
-            <label className="text-secondary mb-2 block text-lg">
+            <label className="text-secondary mb-2 block text-lg font-bold">
               تأكيد كلمة المرور
             </label>
             <input
@@ -72,7 +77,13 @@ const RegisterForm = () => {
           </div>
         </div>
 
-        <div class="mt-8">
+        <div class="mt-8 flex flex-col gap-3">
+          <p className="flex items-center justify-center font-bold text-white">
+            هل لديك حساب بالفعل؟
+            <Link to="/signin" className="text-secondary underline">
+              تسجيل الدخول
+            </Link>
+          </p>
           <button
             type="button"
             class="bg-primary hover:bg-secondary mx-auto block cursor-pointer rounded-3xl px-6 py-3 text-lg tracking-wider text-white"

@@ -28,6 +28,14 @@ const NavBar = () => {
               المفضلة
             </Link>
           </li>
+          <li>
+            <Link
+              to="/estates"
+              className="border-secondary text-secondary pb-1 text-xl font-bold transition duration-500 hover:text-gray-300"
+            >
+              العقارات
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="buttons flex items-center gap-6">
