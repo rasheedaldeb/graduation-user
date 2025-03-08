@@ -21,13 +21,13 @@ const ProfileSection = () => {
   }])
   // form data to send to the backend
   const updateUserData = new FormData;
-  updateUserData.append("name", currentData.name)
-  updateUserData.append("email" , currentData.email)
-  updateUserData.append("password" , currentData.password)
-  updateUserData.append("phone" , currentData.phone)
+ currentData.name &&  updateUserData.append("name", currentData.name)
+ currentData.email && updateUserData.append("email" , currentData.email)
+ currentData.password && updateUserData.append("password" , currentData.password)
+ currentData.phone &&  updateUserData.append("phone" , currentData.phone)
   updateUserData.append("role" , role)
-  updateUserData.append("profileImageUrl" , image )
-  updateUserData.append("walletBalance" , currentData.wallet)
+ image &&  updateUserData.append("profileImageUrl" , image )
+ currentData.wallet &&  updateUserData.append("walletBalance" , currentData.wallet)
   // update user data api 
   const updatData = async (e)=>{
     e.preventDefault()
